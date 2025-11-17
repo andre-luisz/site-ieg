@@ -1,0 +1,13 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+:root { color-scheme: light; }
+
+/* em v4 o @apply deve ficar dentro de um layer */
+@layer base {
+  body { @apply bg-white text-slate-900 antialiased; }
+}
+/* app/globals.css */
+/* Respeita tema claro do SO e melhora toques no mobile */
+* { -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
